@@ -1,0 +1,1051 @@
+    body {
+        margin: 0;
+        padding: 0;
+        color: #cdcdcd;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    @media(max-width:992px) {
+        .slider-size {
+            background-position: 58% 49%!important;
+            background-image: linear-gradient(to left bottom, rgba(0, 33, 105, 0.5), rgba(0, 33, 105, 0.5)), url(/ica/img/slider-images1.png)!important;
+        }
+        .slider-button {
+            background-color: #fff!important;
+            color: #002169!important;
+        }
+        .slider-title {
+            font-size: 50px!important;
+            line-height: 1.14!important;
+            color: #fff!important;
+        }
+        .slider-text {
+            color: #fff!important;
+        }
+        .carousel-indicators li {
+            background-color: #fff!important;
+        }
+        .arrows {
+            color: #fff!important;
+        }
+        .about-title h1 {
+            font-size: 40px!important;
+        }
+        .register-img-container {
+            border-top-right-radius: 0px!important;
+            border-bottom-left-radius: 7px!important;
+        }
+        .register-box {
+            border-bottom-left-radius: 0px!important;
+            border-top-right-radius: 7px!important;
+        }
+    }
+    
+    @media(max-width:768px) {
+        .menu-items-none {
+            display: none!important;
+        }
+        .form-inline button {
+            border: 0px!important;
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+            display: none!important;
+        }
+        .carousel-indicators {
+            margin-left: 7%!important;
+        }
+        .line {
+            width: 51px!important;
+        }
+        .search-sub-card-body {
+            padding: 0px!important;
+            padding-top: 10px!important;
+        }
+        .search-sub-card:last-child {
+            border-bottom: 1px solid!important;
+        }
+        .bg-img {
+            background-image: linear-gradient(to left bottom, rgba(0, 33, 105, 0.5), rgba(0, 33, 105, 0.5)), url(/ica/img/fg-images-4.png)!important;
+        }
+        .btn-link {
+            max-width: 90%;
+        }
+        .footer-second a {
+            padding: 0px 40px 0px 0px!important;
+        }
+    }
+    
+    @media(max-width:576px) {
+        .education-nav {
+            display: none;
+        }
+        .search-title {
+            font-size: 40px!important;
+        }
+        .photo-gallery-title {
+            font-size: 40px!important;
+        }
+        .register-img-container {
+            background-size: 70%!important;
+            background-position: 43% 50%!important;
+            height: 350px!important;
+        }
+    }
+    
+    @media(max-width:425px) {
+        .btn-dark-blue {
+            width: 100%!important;
+        }
+    }
+    
+    @media(max-width:375px) {
+        .about-items {
+            margin-left: auto!important;
+            margin-right: auto!important;
+        }
+    }
+    
+    #menuToggle {
+        display: block;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+    
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: 16px;
+        left: 5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span {
+        display: block;
+        width: 22px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #002169;
+        z-index: 1;
+        transform-origin: -5px 3px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #000000;
+    }
+    
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    /*Menu*/
+    
+    #menu {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        min-height: 670px;
+        height: auto;
+        background-color: #fff;
+        opacity: 0.95;
+        padding: 10px;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in-out;
+        margin-top: 50px;
+        width: 1440px;
+        z-index: 38;
+    }
+    
+    #menu ul {
+        list-style-type: none;
+    }
+    
+    #menu a {
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .menu-first-item {
+        font-size: 24px!important;
+        font-weight: bold!important;
+        font-stretch: normal!important;
+        font-style: normal!important;
+        line-height: 2!important;
+        letter-spacing: normal!important;
+        color: #333333!important;
+    }
+    
+    #menu span {
+        width: 60px;
+        height: 4px;
+        background-color: #002169;
+    }
+    
+    #menuToggle input:checked~div {
+        transform: none;
+    }
+    /*search*/
+    
+    .form-control {
+        border: 0px;
+        height: 48px;
+    }
+    
+    .form-inline button {
+        border: 0;
+        border-right: 1px solid rgb(0, 0, 0, 0.2);
+        border-radius: 0px;
+        opacity: 0.5;
+    }
+    
+    .fa-search {
+        font-size: 16px!important;
+        color: #002169;
+    }
+    
+    .nav-button {
+        width: 170px;
+        height: 48px;
+        background-color: #002169;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .btn-login {
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: right;
+        color: #002169;
+        border-radius: 0;
+    }
+    
+    .btn-login:hover {
+        border-bottom: 1px solid #002169;
+        color: #002169;
+    }
+    
+     ::placeholder {
+        color: #002169 !important;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: right;
+        opacity: 0.5!important;
+    }
+    
+    .menu-items-none {
+        border: 0px!important;
+    }
+    /*slider*/
+    
+    .bg-ecec {
+        background-color: #ececec;
+    }
+    
+    .img-location {
+        position: relative;
+        width: 1200px;
+        right: 470px;
+        top: -87px;
+    }
+    
+    .slider-title {
+        font-size: 72px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.11;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .slider-text {
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .slider-size {
+        height: 680px;
+        background-image: url(/ica/img/slider-images1.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right top;
+    }
+    
+    .slider-button:hover {
+        background-color: #ececec;
+        color: #002169;
+        border: 1px solid #002169;
+    }
+    
+    .fa-arrow-right,
+    .fa-arrow-left {
+        color: #002169;
+        font-size: 40px;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        opacity: 1;
+        bottom: 74px;
+        top: auto;
+        z-index: auto;
+        width: 3%;
+    }
+    
+    .carousel-control-prev {
+        right: 220px;
+        left: auto;
+    }
+    
+    .carousel-control-next {
+        right: 150px;
+    }
+    
+    .carousel-caption {
+        top: 75px;
+        text-align: left!important;
+        bottom: 0px;
+        left: 10%;
+        z-index: auto;
+    }
+    
+    .carousel-indicators {
+        bottom: 85px;
+        position: relative;
+        z-index: auto;
+        margin-left: 4%;
+        width: 200px;
+    }
+    
+    .carousel-indicators li {
+        width: 60px;
+        height: 8px;
+        background-color: #002169;
+    }
+    
+    .carousel-caption li {
+        list-style-type: none;
+    }
+    /*About*/
+    
+    #about {
+        padding: 71px 0px 80px 0px;
+    }
+    
+    .about-title h1 {
+        font-size: 56px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .about-text p {
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .about-img-box {
+        background-image: url(/ica/img/video.png);
+        min-height: 576px;
+        background-position-x: 68%;
+    }
+    
+    .about-items {
+        margin-left: 10%;
+    }
+    
+    .fa-play-circle {
+        font-size: 80px;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s linear;
+    }
+    
+    .fa-play-circle:hover {
+        color: #002169;
+    }
+    
+    .about-span-text {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #fff;
+        margin-left: 10px;
+    }
+    
+    .line {
+        width: 80px;
+        height: 4px;
+        background-color: #002169;
+        margin-left: 15px;
+    }
+    /*education*/
+    
+    .education {
+        background-color: rgb(0, 176, 171, 0.1);
+    }
+    
+    .education-container {
+        margin-left: 9%;
+    }
+    
+    .education-title {
+        font-size: 56px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .more-info-icon {
+        font-size: 23px;
+        cursor: pointer;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        background-color: transparent!important;
+        border: none;
+        color: #333333;
+    }
+    
+    .nav-link.active {
+        border-bottom: 4px solid!important;
+        color: #00b0ab!important;
+    }
+    
+    .nav-tabs .nav-link {
+        border: none;
+    }
+    
+    .nav-tabs a {
+        border: none;
+        color: #333333!important;
+    }
+    
+    .tab-pane {
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .education-title-small {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #00b0ab;
+    }
+    
+    .more-info a {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-decoration: underline;
+        color: #002169!important;
+    }
+    
+    .card-group .card {
+        border: 0px;
+    }
+    
+    .card-title-edit {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #00b0ab;
+    }
+    
+    .card-text i {
+        font-size: 30px;
+        color: #00b0ab;
+    }
+    
+    .card-text {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    /*search*/
+    
+    .search-title {
+        font-size: 56px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .search-box p {
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .search-card-title {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        color: #002169;
+        letter-spacing: normal;
+    }
+    
+    .search-card-title:hover {
+        color: #002169;
+        text-decoration: none;
+    }
+    
+    .search-card-text {
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+    }
+    
+    .search-sub-card {
+        border: none;
+        border-bottom: 1px solid;
+        border-radius: 0px;
+        padding: 30px 0px;
+    }
+    
+    .search-sub-card:last-child {
+        border-bottom: 0px;
+    }
+    
+    .search-sub-card-body {
+        padding: 0px;
+        padding-left: 20px;
+    }
+    
+    .search-sub-card-title a {
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #002169;
+    }
+    
+    .search-sub-card-title a:hover {
+        color: #002169;
+        text-decoration: none;
+    }
+    /*photo-gallery*/
+    
+    .photo-gallery-title {
+        font-size: 56px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .photo-gallery-text {
+        max-width: 570px;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .photo-gallery-container {
+        background-color: #fafafa;
+    }
+    
+    .owl-dots {
+        margin-top: 44px!important;
+    }
+    
+    .owl-dot span {
+        width: 60px!important;
+        height: 8px!important;
+        background-color: #002169!important;
+        opacity: 0.5!important;
+        border-radius: 0px!important;
+    }
+    
+    .owl-dot.active span {
+        opacity: 1!important;
+        border: 0!important;
+    }
+    
+    .owl-dot {
+        border: 0!important;
+    }
+    
+    button:focus {
+        outline: 0!important;
+    }
+    
+    .class-container {
+        position: absolute;
+        bottom: 33px;
+        left: 32px;
+    }
+    
+    .class-container span {
+        font-size: 24px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #ffffff!important;
+    }
+    
+    .galery-card-items a {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #ffffff!important;
+        transition: .3s linear;
+    }
+    
+    .bg-white-icon {
+        filter: brightness(0) invert(1)!important;
+        width: 38px!important;
+    }
+    /*faq*/
+    
+    .faq-head-container h1 {
+        font-size: 56px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .faq-head-container h4 {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #333333;
+    }
+    
+    .faq-head-text {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #999999;
+    }
+    
+    .btn-dark-blue {
+        width: 170px;
+        height: 48px;
+        border-radius: 3px;
+        background-color: #002169;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    
+    .faq-card {
+        border-bottom: 1px solid rgba(0, 0, 0, .125)!important;
+        border-radius: 0.25rem!important;
+    }
+    
+    .btn-link:after {
+        content: '\2212';
+        width: 33px;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 5px;
+        right: 15px;
+        top: 11px;
+        position: absolute;
+    }
+    
+    .btn-link.collapsed::after {
+        content: '\002B';
+    }
+    
+    .btn-link {
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #002169!important;
+    }
+    
+    .btn-link:hover {
+        text-decoration: none;
+    }
+    
+    .card-body-text {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #999999;
+    }
+    /*register*/
+    
+    #form .row {
+        padding-top: 80px;
+    }
+    
+    #form {
+        background-color: #e4ecff;
+        padding-bottom: 80px;
+    }
+    
+    .register-container p {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #999999;
+        padding-bottom: 20px;
+    }
+    
+    .register-box {
+        background-color: #ffffff;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    
+    .form-control {
+        border: 1px solid #dadada;
+        border-radius: 3px;
+    }
+    
+    .register-container h1 {
+        font-size: 56px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #333333;
+        padding-bottom: 20px;
+        padding-top: 45px;
+    }
+    
+    .register-form-container {
+        padding-bottom: 40px;
+    }
+    
+    input::placeholder {
+        text-align: left;
+        font-size: 16px!important;
+        font-weight: normal!important;
+        font-stretch: normal!important;
+        font-style: normal!important;
+        line-height: 1.5!important;
+        letter-spacing: normal!important;
+        color: #999999!important;
+    }
+    
+    input {
+        background-color: #dadada;
+    }
+    
+    .register-img-container {
+        background-color: #b9ccf4;
+        background-image: url(/ica/img/kayit.png);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: 50% 50%;
+        height: 576px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    /*footer*/
+    
+    footer {
+        background-color: #002169;
+    }
+    
+    .social-items-box a {
+        padding: 0px 10px;
+    }
+    
+    .social-items-box a:last-child {
+        padding-right: 0px;
+    }
+    
+    .social-items-box a:first-child {
+        padding-left: 0px;
+    }
+    
+    .footer-second a {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: right;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0px 38px;
+    }
+    
+    .btn-hover:hover {
+        background-color: #ffffff;
+        color: #002169;
+        border: 1px solid #002169;
+    }
+    
+    .more-info:hover {
+        opacity: 0.8;
+    }
+    
+    .footer-second a:hover {
+        text-decoration: underline;
+    }
+    
+    .social-items-box img:hover {
+        transform: scale(1);
+    }
+    
+    .social-items-box img {
+        width: 36px;
+        filter: brightness(0) invert(1);
+    }
+    
+    .right-arrow {
+        width: 20px;
+        filter: invert(11%) sepia(39%) saturate(5892%) hue-rotate(216deg) brightness(91%) contrast(106%);
+        margin-left: 10px;
+    }
+    
+    .card-education {
+        z-index: 0;
+        height: 300px;
+        width: 350px;
+        transition: .6s width ease;
+    }
+    
+    .card-education:hover {
+        height: 300px;
+        width: 731px;
+        z-index: 6;
+        background-image: linear-gradient(to left bottom, rgba(0, 176, 171, 0.5), rgba(0, 176, 171, 0.5)), url(/ica/img/aa-images-4@3x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .card-education:hover .card-title-edit {
+        font-size: 56px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #fff;
+    }
+    
+    .card-education:hover .card-text.py-3 {
+        display: none;
+    }
+    
+    .card-education:hover .card-text {
+        color: #fff;
+        width: 65%;
+    }
+    
+    @media(max-width:1199px) {
+        .card-education {
+            width: 290px!important;
+            height: 298px!important;
+            min-width: 290px!important;
+        }
+        .card-education:hover {
+            height: 240px;
+            width: 610px!important;
+        }
+    }
+    
+    @media(max-width:992px) {
+        .card-education {
+            width: 100%!important;
+        }
+        .card-education:hover {
+            width: 690px!important;
+        }
+    }
+    
+    @media(max-width:767px) {
+        .card-education {
+            width: 100%!important;
+            height: auto!important;
+        }
+        .card-education:hover {
+            width: 100%!important;
+            height: auto;
+            background-image: none;
+        }
+        .card-education:hover .card-text {
+            color: #333333;
+            width: 100%;
+        }
+        .card-education:hover .card-text.py-3 {
+            display: inline-block;
+        }
+        .card-education:hover .card-title-edit {
+            font-size: 24px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #00b0ab;
+        }
+        .card-education:hover .btn-bg-white {
+            display: none!important;
+        }
+    }
+    
+    .card-education:hover .btn-bg-white {
+        display: block;
+    }
+    
+    .btn-bg-white {
+        background-color: #ffffff;
+        color: #002169;
+        width: 170px;
+        height: 48px;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: center;
+        bottom: 25px;
+        position: relative;
+        display: none;
+        transition-delay: 1s;
+    }
+    
+    .btn-bg-white:hover {
+        background-color: #ffffff;
+        color: #002169;
+    }
